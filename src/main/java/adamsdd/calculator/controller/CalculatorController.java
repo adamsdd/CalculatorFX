@@ -1,6 +1,8 @@
-package adamsdd.calculator.view;
+package adamsdd.calculator.controller;
 
+import adamsdd.calculator.model.CalculationOperationType;
 import adamsdd.calculator.model.Calculations;
+import adamsdd.calculator.model.FunctionOperationType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -25,12 +27,30 @@ public class CalculatorController {
     }
 
     public void initialize() {
-        x = BigDecimal.valueOf(0);
-        textView.setText(x.toString());
         resultBuilder = new StringBuilder();
     }
 
+    public void mathematicalOperationButtonClick(ActionEvent actionEvent) {
+        String buttonText = getButtonTextFromEvent(actionEvent);
+        resultBuilder.append(buttonText);
+        appendToTextView(buttonText);
+        System.out.println(resultBuilder.toString());
+    }
+
+    public void functionalButtonClick(ActionEvent actionEvent) {
+        resultBuilder = calculations.doFunctionOperation(FunctionOperationType.valueOf(getButtonTextFromEvent(actionEvent)), resultBuilder);
+        textView.setText(resultBuilder.toString());
+    }
+
+    private String getButtonTextFromEvent(ActionEvent actionEvent) {
+        return ((Button)actionEvent.getSource()).getText();
+    }
+
     public void buttonClick(ActionEvent actionEvent) {
+
+    }
+
+/*    public void buttonClick(ActionEvent actionEvent) {
         Button pressedButton = (Button) actionEvent.getSource();
         textView.setText(pressedButton.getText());
 
@@ -49,7 +69,7 @@ public class CalculatorController {
 
         resultBuilder.append(pressedButton.getText());
         setTextViewText(resultBuilder.toString());
-    }
+    }*/
 
     private void clearValues() {
         x = null;
@@ -57,7 +77,14 @@ public class CalculatorController {
         operation = null;
     }
 
-    private void setTextViewText(String text) {
-        textView.setText(text);
+    private void appendToTextView(String text) {
+        if (text.startsWith("sqrt")) {
+            text = "\u221A";
+        }
+        if (text.startsWith("pow")) {
+            text = "\u00B3";
+        }
+
+        textView.setText(textView.getText() + text);
     }
 }

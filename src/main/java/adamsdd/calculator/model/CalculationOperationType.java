@@ -1,8 +1,8 @@
 package adamsdd.calculator.model;
 
-public enum OperationType {
+public enum CalculationOperationType {
 
-    MUL("x"),
+    MUL("*"),
     DIV("/"),
     SQRT("sqrt"),
     POW("pow"),
@@ -12,7 +12,7 @@ public enum OperationType {
 
     public final String label;
 
-    OperationType(String label) {
+    CalculationOperationType(String label) {
         this.label = label;
     }
 }

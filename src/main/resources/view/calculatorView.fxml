@@ -27,10 +27,10 @@
       <Button mnemonicParsing="false" onAction="#functionalButtonClick" prefHeight="37.0" prefWidth="100.0" text="CE" GridPane.rowIndex="4" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="7" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="pow(x, y)" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="^" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="5" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-      <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="sqrt(x)" GridPane.rowIndex="6" />
+      <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="√" GridPane.rowIndex="6" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" onAction="#functionalButtonClick" prefHeight="37.0" prefWidth="100.0" text="C" GridPane.rowIndex="3" />
@@ -42,7 +42,7 @@
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="-" GridPane.columnIndex="4" GridPane.rowIndex="4" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="5" />
       <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="100.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-      <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="100.0" text="." GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="." GridPane.columnIndex="3" GridPane.rowIndex="6" />
       <Button mnemonicParsing="false" onAction="#mathematicalOperationButtonClick" prefHeight="37.0" prefWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
       <TextField fx:id="textView" alignment="BOTTOM_LEFT" editable="false" prefHeight="85.0" prefWidth="386.0" GridPane.columnSpan="5" GridPane.rowSpan="3">
          <font>

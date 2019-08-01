@@ -4,8 +4,8 @@ public enum CalculationOperationType {
 
     MUL("*"),
     DIV("/"),
-    SQRT("sqrt"),
-    POW("pow"),
+    SQRT("√"),
+    POW("^"),
     ADD("+"),
     SUB("-"),
     PERCENT("%");

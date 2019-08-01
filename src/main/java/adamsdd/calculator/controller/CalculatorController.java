@@ -47,7 +47,10 @@ public class CalculatorController {
     }
 
     public void buttonClick(ActionEvent actionEvent) {
-
+        String calculationResult = calculations.calculateExpression(resultBuilder.toString()).toString();
+        textView.setText(calculationResult);
+        resultBuilder.setLength(0);
+        resultBuilder.append(calculationResult);
     }
 
 /*    public void buttonClick(ActionEvent actionEvent) {
